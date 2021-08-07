@@ -260,3 +260,21 @@ git config receive.denynonfastforwards false
   tg = tag
   df = diff 
 ```
+
+## 현재의 브랜치에서 다른 브랜치로 푸시
+
+branch 1의 수정 사항을 branch 2에 푸시할 수 있다.
+
+스태이징까지는 그대로 하면 된다
+``` 
+git add .
+git commit -m "commit message"
+```
+
+push 할때 명령어만 달리하면 된다.
+
+```
+git push origin <branch 1>:<branch 2>
+```
+
+
