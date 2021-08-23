@@ -277,4 +277,7 @@ push 할때 명령어만 달리하면 된다.
 git push origin <branch 1>:<branch 2>
 ```
 
-
+## 커밋 메시지 작성 방법 및 템플릿 지정
+* [커밋 메시지 작성 방법](https://webruden.tistory.com/486)
+* [커밋 메시지 템플릿 지정1](https://junwoo45.github.io/2020-02-06-commit_template/)
+* [커밋 메시지 템플릿 지정2](https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
