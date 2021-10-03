@@ -286,3 +286,6 @@ git push origin <branch 1>:<branch 2>
 * [커밋 메시지 작성 방법](https://webruden.tistory.com/486)
 * [커밋 메시지 템플릿 지정1](https://junwoo45.github.io/2020-02-06-commit_template/)
 * [커밋 메시지 템플릿 지정2](https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+
+## 커밋 메시지 VSCODE에서 작성할 수 있도록 설정
+* [VSCODE에서 커밋 메시지 작성하기](https://velog.io/@haejung/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-Editor-%EC%84%A4%EC%A0%95-5072)
