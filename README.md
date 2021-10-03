@@ -144,6 +144,11 @@ git push origin new // new 브랜치를 리모트로 보내기
 git branch -D {삭제할 브랜치 명} // local
 git push origin :{the_remote_branch} // remote
 ```
+브랜치 삭제 2
+```
+git branch -D {삭제할 브랜치 명} // local
+git push origin --delete  {브랜치명} // remote
+```
 
 빈 브랜치 생성
 
