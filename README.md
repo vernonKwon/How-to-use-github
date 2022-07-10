@@ -284,8 +284,53 @@ git push origin <branch 1>:<branch 2>
 
 ## 커밋 메시지 작성 방법 및 템플릿 지정
 * [커밋 메시지 작성 방법](https://webruden.tistory.com/486)
-* [커밋 메시지 템플릿 지정1](https://junwoo45.github.io/2020-02-06-commit_template/)
+* [커밋 메시지 템플릿 지정1](https://merrily-code.tistory.com/54)
 * [커밋 메시지 템플릿 지정2](https://git-scm.com/book/ko/v2/Git%EB%A7%9E%EC%B6%A4-Git-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
 
 ## 커밋 메시지 VSCODE에서 작성할 수 있도록 설정
 * [VSCODE에서 커밋 메시지 작성하기](https://velog.io/@haejung/Git-%EC%BB%A4%EB%B0%8B-%EB%A9%94%EC%8B%9C%EC%A7%80%EB%A5%BC-%EC%9C%84%ED%95%9C-Editor-%EC%84%A4%EC%A0%95-5072)
+
+
+## 템플릿 문자열 지정 방법
+1. gitmessage.txt 제작
+```
+touch ~/.gitmessage.txt
+```
+2. 커밋 메지지 편집 시작
+```
+vim ~/.gitmessage.txt
+```
+3. ~/.gitmessage.txt에 아래의 템플릿 문자열 입력
+
+```##### 제목 - 50자 이내로 요약!
+
+### [커밋 타입]: [작업내용]
+
+##### 본문 - 한 줄에 최대 72 글자까지만 입력하기
+
+# 1. 무엇을 수정했는지
+# 2. 왜 수정했는지
+
+# 꼬릿말은 아래에 작성: ex) #이슈 번호
+-
+#   [커밋 타입]  리스트
+#   feat      : 기능 (새로운 기능)
+#   fix       : 버그 (버그 수정)
+#   refactor  : 리팩토링
+#   style     : 스타일 (코드 형식, 세미콜론 추가: 비즈니스 로직에 변경 없음)
+#   docs      : 문서 (문서 추가, 수정, 삭제)
+#   test      : 테스트 (테스트 코드 추가, 수정, 삭제: 비즈니스 로직에 변경 없음)
+#   chore     : 기타 변경사항 (빌드 스크립트 수정 등)
+# ------------------
+#   [체크리스트]
+#     제목 첫 글자는 대문자로 작성했나요?
+#     제목은 명령문으로 작성했나요?
+#     제목 끝에 마침표(.) 금지
+#     제목과 본문을 한 줄 띄워 분리하기
+#     본문에 여러줄의 메시지를 작성할 땐 "-"로 구분했나요?
+# ------------------
+```
+4. 깃 설정 저장하기
+```
+git config --global commit.template ~/.gitmessage.txt
+```
